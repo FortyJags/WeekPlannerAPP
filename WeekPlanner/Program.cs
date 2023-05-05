@@ -11,7 +11,7 @@ Load load = new Load();
 
 if (File.Exists("AgendaItems.txt")) { Console.WriteLine("File exists"); } else { File.Create("AgendaItems.txt"); }
 load.LoadData();
-Console.WriteLine("Testing pull);
+
 while (menu.IsInMenu == true)
 {
     menu.SwitchMenu();
