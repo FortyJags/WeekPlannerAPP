@@ -1,7 +1,7 @@
 # WeekPlanner
 This is my week planner application. 
 
-This is just a simple tester application that allows users to add items to their lsit of agenda items per day, and also view what they ahve planne dfor a specific day. 
+This is just a simple tester application that allows users to add items to their list of agenda items per day, and also view what they have planned for a specific day. 
 
 
 
@@ -27,3 +27,7 @@ This program has a save and load feature. To save the data, it converts each Lis
 The 7 strings are then combined together to make 1 string, which is then written to an AgendItems.txt file. 
 To load data, it reads the AgendaItems.txt file and asigns it content to a stirng. The string is then Split into 7 (removing ',') and is assigned to agendaItems array.
 Each value in the array is assigned to the corresponding List<string>(e.g. List<string> mondayAgenda will be assigned agendaItems[0]).
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+I created this as a little test of my skills. C# (as well as computer programming in general) is a new subject for me. 
