@@ -1,7 +1,10 @@
 # WeekPlanner
 This is my week planner application. 
 
-Upon launching the application, you will be asked to "add" or "view". Below I will break down these two options.
+This is just a simple tester application that allows users to add items to their lsit of agenda items per day, and also view what they ahve planne dfor a specific day. 
+
+
+
 
 Add: By typing "add", you will be able to add agenda items to a specific day. For example, you want to add "Do some code" to mondays agenda. 
 You type "add", this then prompts you to identify which day you want to add to. Following our example, you would type "monday". 
