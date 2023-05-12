@@ -7,7 +7,7 @@ Menu menu = new Menu(update);
 Load load = new Load();
 
 
-//Final touches on save system needed. Need to implement a load feature as well. Then work on aesthetics
+
 
 if (File.Exists("AgendaItems.txt")) { Console.WriteLine("File exists"); } else { File.Create("AgendaItems.txt"); }
 load.LoadData();

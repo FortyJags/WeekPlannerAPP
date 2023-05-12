@@ -19,21 +19,25 @@ namespace WeekPlanner
         //Fianally, the agendaItems for each day are assigned to their corresponding day and are ready for recall when they are called.
         public void LoadData()
         {
-            loadedData = File.ReadAllText("AgendaItems.txt");
 
-            for (int i = 0; i < agendaItems.Length; i++)
+            using (StreamReader reader = new("AgendaItems.txt"))
             {
-                agendaItems[i] = loadedData.Split(',')[i];
-            }
-            agendaItems.ToList().ForEach(item => { temp.Add(item); });
+                 loadedData = reader.ReadToEnd();
 
-            Monday.mondayAgenda.Add(temp[0]);
-            Tuesday.tuesdayAgenda.Add(temp[1]);
-            Wednesday.wednesdayAgenda.Add(temp[2]);
-            Thursday.thursdayAgenda.Add(temp[3]);
-            Friday.fridayAgenda.Add(temp[4]);
-            Saturday.saturdayAgenda.Add(temp[5]);
-            Sunday.sundayAgenda.Add(temp[6]);
+                for (int i = 0; i < agendaItems.Length; i++)
+                {
+                    agendaItems[i] = loadedData.Split(',')[i];
+                }
+                agendaItems.ToList().ForEach(item => { temp.Add(item); });
+
+                Monday.mondayAgenda.Add(temp[0]);
+                Tuesday.tuesdayAgenda.Add(temp[1]);
+                Wednesday.wednesdayAgenda.Add(temp[2]);
+                Thursday.thursdayAgenda.Add(temp[3]);
+                Friday.fridayAgenda.Add(temp[4]);
+                Saturday.saturdayAgenda.Add(temp[5]);
+                Sunday.sundayAgenda.Add(temp[6]);
+            }
         }
 
     }
